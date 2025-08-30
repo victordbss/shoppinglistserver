@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liste de courses</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/style.css" />
+        <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>Liste de courses</h1>
+
+            <form id="article-form">
+                <input id="article-input" type="text" placeholder="Nouvel article" required>
+                <button type="submit" id="submit">Ajouter</button>
+            </form>
+
+            <ul id="articles"></ul>
+            <button id="pdf-btn">Télécharger la liste en PDF</button>
+        </div>
+        <script src="/static/script.js"></script>
+    </body>
+</html>
